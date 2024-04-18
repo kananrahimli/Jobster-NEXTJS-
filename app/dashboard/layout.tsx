@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import logo from "../assets/logo.svg";
 import { FaBarsStaggered } from "react-icons/fa6";
@@ -6,12 +6,19 @@ import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { clearLocalStorage } from "../utils/localstorage";
+import { getAllJobs } from "../lib/data";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-   const [showSidebar, setShowSidebar] = useState(true);
+  const [showSidebar, setShowSidebar] = useState(true);
   const pathname = usePathname();
   const links = [
-    { name: "Statistic", href: "/dashboard/statistic", icon: "" ,overview:'/dashboard'},
+    {
+      name: "Statistic",
+      href: "/dashboard/statistic",
+      icon: "",
+      overview: "/dashboard",
+    },
     { name: "All jobs", href: "/dashboard/allJob", icon: "" },
     { name: "Add job", href: "/dashboard/addJob", icon: "" },
     { name: "Profile", href: "/dashboard/profile", icon: "" },
@@ -88,10 +95,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <FaBarsStaggered></FaBarsStaggered>
             </div>
           </div>
-          <div className="max-h-[90vh] overflow-y-auto">
-
-          {children}
-          </div>
+          <div className="max-h-[90vh] overflow-y-auto">{children}</div>
         </div>
       </div>
     </div>

@@ -2,12 +2,13 @@
 import React from "react";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
-interface IProps{
-    type: string;
-    label: string;
-    options: Array<{val:string,name:string}>
+interface IProps {
+  type: string;
+  label: string;
+  value: string;
+  options: Array<{ val: string; name: string }>;
 }
-const SelectGroup:React.FC<IProps>  = ({type,label,options}) => {
+const SelectGroup:React.FC<IProps>  = ({type,label,options,value}) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -31,7 +32,7 @@ const SelectGroup:React.FC<IProps>  = ({type,label,options}) => {
         onChange={(e) => {
           handleSearch(e.target.value);
         }}
-        defaultValue={searchParams.get(type)?.toString()}
+        value={value}
       >
         {options.map((option, index) => {
           return (

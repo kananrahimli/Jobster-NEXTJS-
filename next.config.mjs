@@ -1,3 +1,4 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: "_next",
@@ -8,6 +9,9 @@ const nextConfig = {
       return `${new Date().getTime()}`;
     }
   },
+
+  
 };
 
 export default nextConfig;
+

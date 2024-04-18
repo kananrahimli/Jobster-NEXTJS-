@@ -11,11 +11,12 @@ import Link from "next/link";
 import { toast } from "react-toastify";
 import InputGroup from "../components/InputGroup";
 import { useRouter } from "next/navigation";
+import Cookies from "js-cookie";
 import { setUserToLocalStorage } from "../utils/localstorage";
+
 export type ILoginType = z.infer<typeof loginSchema>;
 
 const Page = () => {
-  
   const {
     register,
     handleSubmit,
@@ -24,23 +25,21 @@ const Page = () => {
     resolver: zodResolver(loginSchema),
   });
   const router = useRouter();
-
   const signIn: SubmitHandler<ILoginType> = (data) => {
     const validations = loginSchema.safeParse(data);
     if (validations.success) {
       beLogin(data)
         .then((res) => {
-          
           toast.success("You are now logged in");
-          return res.data.user
+          setUserToLocalStorage(res.data.user);
+          // Cookies.set('token', res.data.user.token);
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
         })
-        .then((res) => {
-         setUserToLocalStorage(res)
-          router.push("/dashboard");
-        })
+
         .catch((err) => {
           console.log(err);
-
           toast.error(err.response.data.msg);
         });
     } else {

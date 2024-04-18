@@ -15,7 +15,7 @@ interface IProps {
   //   required?: boolean;
   //   maxLength?: number;
   register?: UseFormRegister<any> | undefined;
-  value: string | undefined;
+  value?: string | undefined;
 
 }
 
@@ -39,7 +39,6 @@ const InputGroup: React.FC<IProps> = ({
  
 
   const handleSearch = useDebouncedCallback((term: string) => {
-
     setInputValue(term);
     const params = new URLSearchParams(searchParams);
     if (term) {

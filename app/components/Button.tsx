@@ -13,7 +13,7 @@ const Button = () => {
     params.delete("type");
     params.delete("sort");
     params.delete("status");
-
+    params.set("page",'1');
     replace(`${pathname}?${params.toString()}`);
   };
   return (

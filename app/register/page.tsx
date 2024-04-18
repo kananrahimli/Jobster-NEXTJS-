@@ -24,13 +24,15 @@ const Page = () => {
   const signUp: SubmitHandler<IRegisterType> = (data) => {
     const validations = registerSchema.safeParse(data);
     if (validations.success) {
-      beRegister(data).then((res) => {
-        toast.success("Created user");
-      }).catch((err) => {
-        toast.error(err.response.data.msg);
-      })
+      beRegister(data)
+        .then((res) => {
+          toast.success("Created user");
+        })
+        .catch((err) => {
+          toast.error(err.response.data.msg);
+        });
     } else {
-      return
+      return;
     }
   };
 

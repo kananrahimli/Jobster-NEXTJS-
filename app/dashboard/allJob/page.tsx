@@ -1,4 +1,3 @@
-
 import FilterBox from "@/app/components/FilterBox";
 import InputGroup from "@/app/components/InputGroup";
 import JobList from "@/app/components/JobList";
@@ -11,6 +10,9 @@ import { JobsSkeleton } from "@/app/components/Skeleton";
 import { cookies } from "next/headers";
 import Pagination from "@/app/components/Pagination";
 import Button from "@/app/components/Button";
+import { toast } from "react-toastify";
+import { redirect } from "next/navigation";
+import { NextApiRequest } from "next";
 // let jobs
 const page = async ({
   searchParams,
@@ -20,10 +22,10 @@ const page = async ({
     status?: string;
     type?: string;
     sort?: string;
-    page?:string
+    page?: string;
   };
 }) => {
-  const { search, status, type, sort,page} = searchParams || {}
+  const { search, status, type, sort, page } = searchParams || {};
   const jobResponse: JobResponse = await getAllJobs(
     `/jobs?status=${status ? status : "all"}&jobType=${
       type ? type : "all"
@@ -31,10 +33,10 @@ const page = async ({
       search ? search : ""
     }`
   );
-
   const jobs: Job[] = jobResponse?.jobs;
   const totalPages: number = jobResponse?.numOfPages;
-    
+
+
   return (
     <div className="container md:px-0 max-md:px-3  px-5 py-5 flex flex-col gap-5 ">
       <FilterBox>
@@ -57,6 +59,7 @@ const page = async ({
               { val: "reject", name: "Reject" },
               { val: "interview", name: "Interview" },
             ]}
+            value={status ? status : "all"}
           ></SelectGroup>
           <SelectGroup
             type="type"
@@ -68,6 +71,7 @@ const page = async ({
               { val: "remote", name: "Remote" },
               { val: "internship", name: "Internship" },
             ]}
+            value={type ? type : "all"}
           ></SelectGroup>
           <SelectGroup
             type="sort"
@@ -78,6 +82,7 @@ const page = async ({
               { val: "a-z", name: "A-z" },
               { val: "z-a", name: "Z-a" },
             ]}
+            value={sort ? sort : "latest"}
           ></SelectGroup>
           <Button></Button>
         </div>
@@ -85,7 +90,7 @@ const page = async ({
       <h4 className="font-semibold text-2xl">
         {jobResponse.totalJobs} job founded
       </h4>
-      <Suspense key={jobs} fallback={<JobsSkeleton></JobsSkeleton>}>
+      <Suspense  fallback={<JobsSkeleton></JobsSkeleton>}>
         <JobList jobs={jobs}></JobList>
       </Suspense>
       <Pagination totalPages={totalPages}></Pagination>

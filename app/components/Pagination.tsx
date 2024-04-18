@@ -7,10 +7,8 @@ const Pagination = ({ totalPages }: { totalPages: number }) => {
   const pathname = usePathname();
   const { replace } = useRouter();
 
-  // Mevcut sayfa numarasını alma
   const currentPage = parseInt(searchParams.get("page") || "1");
 
-  // Geri ve ileri butonlarına tıklama işlevleri
   const handlePrevPage = () => {
     const prevPage = currentPage > 1 ? currentPage - 1 : 1;
     handleChangePage(prevPage);
@@ -21,14 +19,13 @@ const Pagination = ({ totalPages }: { totalPages: number }) => {
     handleChangePage(nextPage);
   };
 
-  // Sayfa değiştirme işlevi
+ 
   const handleChangePage = (page: number) => {
     const params = new URLSearchParams(searchParams);
     params.set("page", String(page));
     replace(`${pathname}?${params.toString()}`);
   };
 
-  // Sayfa numaralarını oluşturma
   const pageNumbers = Array.from(Array(totalPages).keys()).map(
     (num) => num + 1
   );
