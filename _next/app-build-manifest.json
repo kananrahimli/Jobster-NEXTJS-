@@ -1,20 +1,10 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/dashboard/statistic/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dashboard/statistic/page.js"
     ],
     "/dashboard/layout": [
       "static/chunks/webpack.js",
@@ -26,10 +16,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/dashboard/allJob/page.js"
     ],
-    "/not-found": [
+    "/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/chunks/app/login/page.js"
+    ],
+    "/dashboard/statistic/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dashboard/statistic/page.js"
+    ],
+    "/dashboard/addJob/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dashboard/addJob/page.js"
     ]
   }
 }

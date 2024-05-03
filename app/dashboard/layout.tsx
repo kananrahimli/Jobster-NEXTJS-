@@ -3,15 +3,17 @@ import Image from "next/image";
 import logo from "../assets/logo.svg";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import {  usePathname } from "next/navigation";
 import { clearLocalStorage } from "../utils/localstorage";
 import { getAllJobs } from "../lib/data";
+import { toast } from "react-toastify";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [showSidebar, setShowSidebar] = useState(true);
   const pathname = usePathname();
+
   const links = [
     {
       name: "Statistic",
@@ -23,6 +25,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { name: "Add job", href: "/dashboard/addJob", icon: "" },
     { name: "Profile", href: "/dashboard/profile", icon: "" },
   ];
+  useEffect(() => {
+    getAllJobs(`/jobs`).then((res) => {
+      if (res == "Authentication invalid") {
+        toast.error(res)
+        clearLocalStorage();
+      }
+    });
+  }, []);
+
+ 
   return (
     <div>
       <div

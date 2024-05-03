@@ -1,54 +1,90 @@
 {
   "node": {
-    "009eee5c4be59b230efa620488adbc4c190dc0d7": {
+    "1e6cac6b85b78909ee8030cac0cdbda5fef4276a": {
       "workers": {
-        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2Fjobster-next%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22%24%24ACTION_1%22%2C%22%24%24ACTION_2%22%2C%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!",
+        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/statistic/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/addJob/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/dashboard/allJob/page": "rsc"
+        "app/dashboard/allJob/page": "rsc",
+        "app/login/page": "action-browser",
+        "app/dashboard/statistic/page": "action-browser",
+        "app/dashboard/addJob/page": "action-browser"
       }
     },
-    "2b5095f3b3780c040aa2657b5b616c355ee8b572": {
+    "3a5a57780dea62120d3615bb81fef7718f52ae85": {
       "workers": {
-        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2Fjobster-next%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22%24%24ACTION_1%22%2C%22%24%24ACTION_2%22%2C%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!",
+        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/statistic/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/addJob/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/dashboard/allJob/page": "rsc"
+        "app/dashboard/allJob/page": "rsc",
+        "app/login/page": "action-browser",
+        "app/dashboard/statistic/page": "action-browser",
+        "app/dashboard/addJob/page": "action-browser"
       }
     },
-    "4bee16bded5133168bd971790cf77e2371c566ae": {
+    "5bd1714d19b734d039de0c29b6452bce0bda1faf": {
       "workers": {
-        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2Fjobster-next%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22%24%24ACTION_1%22%2C%22%24%24ACTION_2%22%2C%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!",
+        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/statistic/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/addJob/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/dashboard/allJob/page": "rsc"
+        "app/dashboard/allJob/page": "rsc",
+        "app/login/page": "action-browser",
+        "app/dashboard/statistic/page": "action-browser",
+        "app/dashboard/addJob/page": "action-browser"
       }
     },
-    "6730086fdeccd4a6b12a6e765f5992d7fe3e508b": {
+    "73ce44b892d44a0299b1c8cd143293daf5fe65ae": {
       "workers": {
-        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2Fjobster-next%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22%24%24ACTION_1%22%2C%22%24%24ACTION_2%22%2C%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!",
+        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/statistic/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/addJob/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/dashboard/allJob/page": "rsc"
+        "app/dashboard/allJob/page": "rsc",
+        "app/login/page": "action-browser",
+        "app/dashboard/statistic/page": "action-browser",
+        "app/dashboard/addJob/page": "action-browser"
       }
     },
-    "df439421a4764a7b5a68cc476cbfd15b6a78d6e1": {
+    "a07b19896a1572851eae013df49407078c95e60d": {
       "workers": {
-        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2Fjobster-next%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22%24%24ACTION_1%22%2C%22%24%24ACTION_2%22%2C%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!",
+        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/statistic/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/addJob/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/dashboard/allJob/page": "rsc"
+        "app/dashboard/allJob/page": "rsc",
+        "app/login/page": "action-browser",
+        "app/dashboard/statistic/page": "action-browser",
+        "app/dashboard/addJob/page": "action-browser"
       }
     },
-    "e0701ceae991120504c25fadb213fdfeee07b611": {
+    "f3218d356c62a83194fbe4c49e3553c9094fec37": {
       "workers": {
-        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2Fjobster-next%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22%24%24ACTION_1%22%2C%22%24%24ACTION_2%22%2C%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!"
+        "app/dashboard/allJob/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=!",
+        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/statistic/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!",
+        "app/dashboard/addJob/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkananrahimli%2FDesktop%2FNEXTJS%2FJobster-NEXTJS-%2Fapp%2Futils%2Flocalstorage.ts%22%2C%5B%22clearLocalStorage%22%2C%22%24%24ACTION_0%22%2C%22getUserFromLocalStorage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22setUserToLocalStorage%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/dashboard/allJob/page": "rsc"
+        "app/dashboard/allJob/page": "rsc",
+        "app/login/page": "action-browser",
+        "app/dashboard/statistic/page": "action-browser",
+        "app/dashboard/addJob/page": "action-browser"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "jG1cxPD0JBmLqGfTl1hKpL7k/bSUhv6Bg/5kqYwo8B4="
+  "encryptionKey": "+xlXNFvSgqi9DvP5VV5hF7hnNCAisrRkYl44Kmv5j14="
 }

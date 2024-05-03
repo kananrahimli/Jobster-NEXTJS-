@@ -10,7 +10,7 @@ interface IProps {
   //   o;nChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   error?: string;
-  useForm?: true;
+  useForm?: boolean;
   //   disabled?: boolean;
   //   required?: boolean;
   //   maxLength?: number;
@@ -28,7 +28,6 @@ const InputGroup: React.FC<IProps> = ({
   register,
   useForm,
   value,
-  
 }) => {
   const [inputValue, setInputValue] = useState<string | undefined>(value);
   const searchParams = useSearchParams();
@@ -68,7 +67,7 @@ const InputGroup: React.FC<IProps> = ({
             handleSearch(e.target.value);
           }}
           // defaultValue={value}
-          value={parameters.size < 1 ? '' : inputValue}
+          value={value? inputValue : ""}
         />
       )}
       {error && <span className="text-red-400 text-sm">{error}</span>}

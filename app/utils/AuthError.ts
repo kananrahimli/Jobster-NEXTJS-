@@ -1,4 +1,3 @@
-import {  clearLocalStorage, getUserFromLocalStorage, setUserToLocalStorage } from "./localstorage";
 
 export const checkForUnauthorizedResponse =  (err:any) => {
   if (

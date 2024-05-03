@@ -3,16 +3,14 @@ import InputGroup from "@/app/components/InputGroup";
 import JobList from "@/app/components/JobList";
 import SelectGroup from "@/app/components/SelectGroup";
 import { getAllJobs } from "@/app/lib/data";
-import React, { Suspense } from "react";
+import React, { Key, Suspense } from "react";
 import { JobResponse } from "../../types/type";
 import { Job } from "../../types/type";
 import { JobsSkeleton } from "@/app/components/Skeleton";
 import { cookies } from "next/headers";
 import Pagination from "@/app/components/Pagination";
 import Button from "@/app/components/Button";
-import { toast } from "react-toastify";
-import { redirect } from "next/navigation";
-import { NextApiRequest } from "next";
+
 // let jobs
 const page = async ({
   searchParams,
@@ -33,7 +31,8 @@ const page = async ({
       search ? search : ""
     }`
   );
-  const jobs: Job[] = jobResponse?.jobs;
+  const jobs: Job[] =
+    jobResponse?.jobs;
   const totalPages: number = jobResponse?.numOfPages;
 
 
@@ -90,7 +89,7 @@ const page = async ({
       <h4 className="font-semibold text-2xl">
         {jobResponse.totalJobs} job founded
       </h4>
-      <Suspense  fallback={<JobsSkeleton></JobsSkeleton>}>
+      <Suspense key={jobs.length} fallback={<JobsSkeleton></JobsSkeleton>}>
         <JobList jobs={jobs}></JobList>
       </Suspense>
       <Pagination totalPages={totalPages}></Pagination>

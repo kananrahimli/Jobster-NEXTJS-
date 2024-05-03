@@ -1,4 +1,4 @@
-// File: /Users/kananrahimli/Desktop/NEXTJS/jobster-next/app/dashboard/allJob/page.tsx
+// File: /Users/kananrahimli/Desktop/NEXTJS/Jobster-NEXTJS-/app/dashboard/allJob/page.tsx
 import * as entry from '../../../../../app/dashboard/allJob/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
